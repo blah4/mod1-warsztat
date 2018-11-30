@@ -66,6 +66,36 @@ li a {
     color: white;
   }
 
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: black;
+    top: 70px;
+}
+
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    
+    border-bottom: 20px solid black;
+    position: relative;
+    top: -20px;
+    right: -20px;
+}
+
+.sub-menu a {
+    padding: 5px;
+}
+
+ul li:first-child:hover ul {
+    display: block;
+}
+ul li:first-child:hover .arrow-up {
+    display: block;
+}
+
 section {
   width: 100%;
 }
@@ -209,6 +239,11 @@ section {
     background-color: #f9f9f9;
     border: 1px solid gray;
 }
+
+.plan:hover {
+    background-color: rgb(203, 216, 214); 
+}
+
 
 .plan:nth-child(1) {
     margin: 0 90px 0 100px;
